@@ -75,6 +75,7 @@ public final class ForwardedMessage extends SystemMessage {
             byte[] serReqSign = new byte[in.readInt()];
             in.readFully(serReqSign);
             request.serializedMessageSignature = serReqSign;
+            request.signed = true;
 
         }
     }

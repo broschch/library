@@ -91,6 +91,7 @@ public final class BatchReader {
 
                 tm.serializedMessage = message;
                 tm.serializedMessageSignature = signature;
+                tm.signed = signature != null;
                 tm.numOfNonces = numberOfNonces;
                 tm.seed = seed;
                 tm.timestamp = timestamp;
